@@ -3,7 +3,7 @@ export async function getPokemons(){
     const arrayPokemons = []
     const loadingElement = document.getElementById('loading');
     loadingElement.style.display = 'block';
-    for (let i = 1; i <= 250; i++) {
+    for (let i = 1; i <= 251; i++) {
         const result = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
         const pokemonResultToObject = await result.json()   
         arrayPokemons.push(pokemonResultToObject)  
