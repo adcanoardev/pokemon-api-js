@@ -57,7 +57,7 @@ function drawPokemons(mappedPokemons) {
     ulDescription$$.appendChild(li3$$);
     li$$.innerHTML = "Type ⫸ ";
     pokemon.type.map((type) => (li$$.innerHTML += `${type.toUpperCase()} `));
-    li2$$.innerHTML = `Weight ⫸ ${pokemon.weight} kg`;
+    li2$$.innerHTML = `Weight ⫸ ${pokemon.weight/10} kg`;
     const abilityUppercase = pokemon.abilities;
     li3$$.innerHTML = `Ability ⫸ ${
       abilityUppercase.charAt(0).toUpperCase() + pokemon.abilities.slice(1)
